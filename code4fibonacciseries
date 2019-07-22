@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int n,first,second,next,c;
+    printf("enter the value of first and second\n");
+    scanf("%d %d",&first,&second);
+    printf("enter the numbers of terms\n");
+    scanf("%d",&n);
+    printf("first %d terms of fibonacci series are\n",n);
+    for (c=0;c<n;c++)
+    {
+        if (c<=1)
+            next=c;
+        else
+        {
+            next=first+second;
+            first=second;
+            second=next;
+
+        }
+    printf("%d\n",next);
+
+    }
+    printf("igdtuw");
+return 0;
+}
